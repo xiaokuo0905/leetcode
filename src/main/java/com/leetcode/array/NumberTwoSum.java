@@ -14,14 +14,14 @@ public class NumberTwoSum {
      * 示例:
      *    给定 nums = [2, 7, 11, 15], target = 9
      *    因为 nums[0] + nums[1] = 2 + 7 = 9
-     *    所以返回 [0, 1]
-     */
-
-
-    /**
-     * 第一种暴力解题方法:
-     * 遍历2次数据，第1次遍历，找出第一个数 + 第2次遍历 寻找第二个数
-     * 如果两数之和等于目标数，返回2个数的位置。
+     *    所以 返回 [0, 1]
+     *
+     * 第一种暴力解题方法: twoSumFirst
+     *    遍历2次数据，第1次遍历，找出第一个数 + 第2次遍历 寻找第二个数
+     *    如果两数之和等于目标数，返回2个数的位置。
+     *
+     * 第二种解题方法: twoSumSecond
+     *    遍历1次数据，采用hash 列表存放数组的数据和位置， 从hash列表中检索 目标数和元素的差
      */
     public int[] twoSumFirst(int[] nums, int target) {
         for (int i = 0; i < nums.length; i++) {
@@ -33,11 +33,6 @@ public class NumberTwoSum {
         }
         return null;
     }
-
-    /**
-     * 第二种暴力解题方法:
-     * 遍历1次数据，采用hash 列表存放数组的数据， 从hash列表中检索 目标数和元素的差
-     */
     public int[] twoSumSecond(int[] nums, int target) {
         HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
         for (int i = 0; i < nums.length; i++) {
@@ -53,9 +48,7 @@ public class NumberTwoSum {
     public static void main(String[] args) {
         int[] nums = new int[]{-16, -2, 8, -4, -9};
         int target = -8;
-
         NumberTwoSum test = new NumberTwoSum();
-
         // 第一种解题方法
         int[] first = test.twoSumFirst(nums, target);
         System.out.println(String.format("第一种解题方法: index:[%s,%s];元素:[%s,%s];结果:[%s]",first[0],first[1],nums[first[0]],nums[first[1]],target));
