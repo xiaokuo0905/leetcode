@@ -1,0 +1,34 @@
+
+
+
+排序的种类:
+   1. 交换排序
+      a.快速排序  QuickSort
+      b.冒泡排序  BubbleSort
+   2. 插入排序
+      a. 插入排序 InsertSort
+      b. 希尔排序，也称递减增量排序算法 ShellInsert
+   3. 选择排序
+   4. 归并排序
+      a. 归并 GuibingSort
+      b. 递归 RecursiveSort
+      c. 迭代
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

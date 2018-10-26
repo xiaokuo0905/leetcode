@@ -1,12 +1,15 @@
-package com.leetcode.sort;
+package com.leetcode.array;
 
 import java.util.Arrays;
 
 public class MerageSortArray {
 
     /**
-     * 先依次比较两个数组，按照小的就传入新的数组。当这次比较完之后可能有一个数组的长度很长，
-     * 留下一些数组，然后在新数组的末尾插入即可。
+     * 思路:
+     *   先依次比较两个数组，按照小的就传入新的数组。
+     *   当这次比较完之后可能有一个数组的长度很长，
+     *   剩下的数组元素在新数组的末尾插入即可
+     *
      * @param a
      * @param b
      * @return
